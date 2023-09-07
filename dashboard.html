@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Dashboard</title>
+    <style>
+        /* Basic CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .welcome-message {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .dashboard-tiles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .dashboard-tile {
+            width: calc(33.33% - 20px);
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        /* Customize dashboard tile styles */
+        .dashboard-tile h3 {
+            color: #333;
+        }
+
+        .dashboard-tile p {
+            color: #666;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .dashboard-tile {
+                width: calc(50% - 20px);
+            }
+        }
+        img{
+            height: 300px;
+            width: 300px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to the Cakeshop</h1>
+    </div>
+    <div class="container">
+        <div class="welcome-message">
+            <p>Welcome, User! Here you will get all types of cakes and pastries.</p>
+        </div>
+        <div>
+        <form action="/action_page.php">
+            <label for="cakeshop">Choocse category:</label>
+            <select name="cakeshop" id="cakeshop" >
+              <option value="Pastries">Pastries</option>
+              <option value="Cake">Cake</option>
+              
+            </select>
+        </div>
+        <div class="dashboard-tiles">
+            <div class="dashboard-tile">
+                <a href="contact.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr3LsBcNCT0XdpGWzrleZCOCARxGTb7XoGdw&usqp=CAU" ></a>
+                <p>Black Forest</p>
+                <p>50/-</p>
+            </div>
+            <div class="dashboard-tile">
+                <img src="https://png.pngtree.com/png-clipart/20190902/original/pngtree-strawberry-cake-pink-pastry-dessert-png-image_4409121.jpg">
+                <p>Strawberry</p>
+                <p>50/-</p>
+            </div>
+            <div class="dashboard-tile">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6YrDdF_OntO4l6ckYXiLt7VmT69EkAbQpGw&usqp=CAU">
+                <p>Butterscotch</p>
+                <p>50/-</p>
+            </div>
+            <div class="dashboard-tile">
+                <img src="https://www.bakehoney.com/media/13446/conversions/23664_05-27-2022_10-58-13_name_0blueberry-cake-banner.jpg"><p>Butterscotch</p>
+                <p>Blueberry cake</p>
+                <p>500/-</p>
+            </div>
+            <div class="dashboard-tile">
+                <img src="https://png.pngtree.com/png-clipart/20210312/original/pngtree-three-dimensional-chocolate-birthday-cake-png-image_6075457.jpg">
+                <p>Chocolate cake</p>
+                <p>700/-</p>
+            </div>
+            <div class="dashboard-tile">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjA7chn3n66r-8T1vVZY1jK5ST3z_wYS0hvw&usqp=CAU">
+                <p>Red velvet cake</p>
+                <p>750/-</p>
+            </div>
+            <div class="dashboard-tile">
+                <img src="https://i0.wp.com/www.treatwell.co.in/wp-content/uploads/2023/01/pineapple-cake-png-ff.png?fit=500%2C500&ssl=1">
+                <p>Pinapple cake</p>
+                <p>650/-</p>
+            </div>
+            <div class="dashboard-tile">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo0vzbdeGHCFjnDEKWc6qoOjy9Le-Sloh4ZA&usqp=CAU">
+            <p>Rose cake</p>
+                <p>800/-</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
